@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-  $("#myform").submit(function(){
+  $("#myform").submit(function(e){
+	  e.preventDefault();
 	 
     var search = $("#books").val();
     if(search=='')
